@@ -64,11 +64,11 @@ void finished(int q[], int& counter) {
 
 	//print the board via the pointers in array board
 	// first print upper board
-
+cout << endl;
 cout << "Solution " << counter << ": " << endl;
     cout << endl;
 
-	cout << " ";
+	cout << "  ";
 	for (i = 0; i < 7 * 8; i++)
 		cout << '_';
 	cout << endl;
@@ -86,9 +86,9 @@ cout << "Solution " << counter << ": " << endl;
 		}
 
 	//before exiting print lower border
-	cout << " ";
+	cout << "  ";
 	for (i = 0; i < 7 * 8; i++)
-		cout << '-';
+		cout << '_';
 	cout << endl;
 
 }// Print function ends here
