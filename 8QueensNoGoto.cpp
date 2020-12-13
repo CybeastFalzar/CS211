@@ -39,22 +39,21 @@ void finished(int q[], int &counter) {
     }
     cout << endl;
        
-}// Print function ends here
+}
 
 int main() {
   int counter = 0;
   int q[8] = {0}, col = 1;
   q[0] = 0;
   bool keepRow = false;
-// 2.
-while (true) { // Only a limited amount of solutions for the problem
-    while (col < 8) {
-    // For loop 
+
+while (true) { 
+    while (col < 8) { 
       if(keepRow == 0) 
         q[col]=-1;   
         keepRow=false;
-      //for (int r = 0; r < 8; r++) {
-      for (int r = 0; q[col] < 8; r++) {
+     
+      while (q[col] < 8) {
         q[col]++;
         while (q[col] == 8) {
           backtrack(col);
